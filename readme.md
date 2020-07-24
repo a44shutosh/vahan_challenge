@@ -8,12 +8,6 @@ Vahan chat bot
 1. technologies used react.js , redux
 
 
-
-### Dependencies
-inside api folder
-* create config.production.json file(for productions) and config.development.json file(for development)  inside config folder and copy config.example.json 
-
-
 ### Installation
  #Frontend
  cd frontend
