@@ -15,21 +15,12 @@ inside api folder
 
 
 ### Installation
- #Backend
-cd api
-* npm install
-npm start
-
  #Frontend
  cd frontend
 * npm install
 
-### RUN
-# Backend
-cd api
-* npm start for development
 
-# Backend
+# frontend
 cd Frontend
 * npm start for development
 
