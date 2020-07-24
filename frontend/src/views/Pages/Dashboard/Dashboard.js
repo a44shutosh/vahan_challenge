@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import '../../../../public/css/dashboard.css';
 
+import SendMsg  from '../../../components/SendMsg.jsx';
+import ReceiveMsg  from '../../../components/ReceiveMsg.jsx';
+
 class Dashboard extends Component {
 
   constructor(props) {
@@ -21,13 +24,14 @@ class Dashboard extends Component {
 
     getMessage(){
       let msgs = this.state.msgs;
+      let that = this;
 
      this.onMessage("herr").then(function(result){
         let text = result.data.botMessage;
         let msg = {"text": text, "type":"received"};
         
         msgs.push(msg);
-        this.setState({msgs:msgs});
+        that.setState({msgs:msgs});
         return 0;
       })
 
@@ -60,19 +64,11 @@ renderMsgs(){
     const msgBody =  msgs.map((msg)=>{   
       if(msg.type=="send"){
         i++
-       return  <div key={i} className="setting-right">
-       <div className="sendtext">
-         <p className="blue">{msg.text}</p>
-       </div>
-       </div>;
+       return  <SendMsg key={i} text={msg.text}/>
         
       }else{
         i++;
-        return <div key={i} className="setting-left">
-        <div className="reply">
-          <p className="blue">{msg.text}</p>
-        </div>
-        </div>;
+        return <ReceiveMsg key={i} text={msg.text}/>
       }  
   });
   return msgBody;
@@ -120,8 +116,8 @@ renderMsgs(){
         
         <div id="info">
           <div className="reply-input">
-            <input type="text" className="text-input" onKeyPress={this.handleKeyPress.bind(this)} />
-            <button onClick={this.sendMsg.bind(this)}>Send</button>
+            <input height="20px" type="text" className="text-input" onKeyPress={this.handleKeyPress.bind(this)} />
+            <button className="replyButton" onClick={this.sendMsg.bind(this)}>>></button>
           </div>
         </div>
       </div>

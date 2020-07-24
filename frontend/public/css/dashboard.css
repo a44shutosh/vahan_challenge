@@ -41,7 +41,7 @@
  padding-bottom: 30px;
  overflow: auto;  
  background-color: #DCDCDC;
- height: 500px;
+ height: 470px;
 }
 
 .setting-left{
@@ -63,6 +63,7 @@
   margin: 0;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  box-shadow: 2px 2px #888888 ;
 }
 
 .reply{
@@ -75,6 +76,7 @@
   margin: 0;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  box-shadow: 2px 2px #888888 ;
 }
 
 #sendMsgDiv { 
@@ -93,6 +95,28 @@
 }
 
 .text-input{
-  width:80%;
+  width:85%;
+  z-index: 2;
+  border-style: solid;
+  border-color:#f9eab5;
+  border-width: 2px;
+  box-shadow: 2px 2px #888888 ;
+  height: 50px;
 }
 
+
+.replyButton {
+  background-color: rgb(220, 233, 104); /* Green */
+  border: none;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  width:12%;
+  height: 40px;
+  font-weight: bold;
+}
