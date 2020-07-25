@@ -92,31 +92,23 @@ renderMsgs(){
     } = environment;
 
     return (
-      <div>
-          <div >
+      <div className="main-container">
+          <div>
             <button className="tablink" >Chat</button>
             <button className="tablink" >My Jobs</button>
             <button className="tablink" >Profile</button>
           </div>
-          <div className="animated fadeIn float-left">
-              <div className="card">
-                <div>
-                  <div className="card-header">
-                    
-                  </div>
-                  
-                  <div className="card-body">
+        
                   <div className="content">
                   {this.renderMsgs()}
-                  </div>
-                </div>
-              </div>
+                  
+            
             </div>
-        </div>
+        
         
         <div id="info">
           <div className="reply-input">
-            <input height="20px" type="text" className="text-input" onKeyPress={this.handleKeyPress.bind(this)} />
+            <input  type="text" className="text-input" onKeyPress={this.handleKeyPress.bind(this)} />
             <button className="replyButton" onClick={this.sendMsg.bind(this)}>>></button>
           </div>
         </div>

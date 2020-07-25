@@ -11,6 +11,10 @@
 
 
 /* Style the tab buttons */
+
+.main-container{
+  height: 100%;
+}
 .tablink {
   background-color: #555;
   color: white;
@@ -37,11 +41,11 @@
 }
 
 .content{
-  padding: 20px;
- padding-bottom: 30px;
+  padding: 12px;
+ padding-bottom: 2px;
  overflow: auto;  
  background-color: #DCDCDC;
- height: 470px;
+ height: 78vh;
 }
 
 .setting-left{
@@ -90,12 +94,11 @@
 
 .reply-input{
   border-radius: 10px;
-  padding-top: 2.5%;
   border: 2px;
 }
 
 .text-input{
-  width:85%;
+  width:92%;
   z-index: 2;
   border-style: solid;
   border-color:#f9eab5;
@@ -106,17 +109,61 @@
 
 
 .replyButton {
-  background-color: rgb(220, 233, 104); /* Green */
+ 
   border: none;
   color: #000;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+
   font-size: 20px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 50%;
-  width:12%;
-  height: 40px;
+  
   font-weight: bold;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  background: rgb(220, 233, 104);
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .replyButton {
+ 
+    border: none;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+  
+    font-size: 20px;
+    
+    font-weight: bold;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background: rgb(220, 233, 104);
+    margin-left: 5px;
+  }
+
+  .content{
+    padding: 12px;
+   padding-bottom: 2px;
+   overflow: auto;  
+   background-color: #DCDCDC;
+   height: 78vh;
+  }
+
+  .text-input{
+    width:85%;
+    z-index: 2;
+    border-style: solid;
+    border-color:#f9eab5;
+    border-width: 2px;
+    box-shadow: 2px 2px #888888 ;
+    height: 50px;
+  }
+
+  .reply-input{
+    border-radius: 10px;
+    padding-top: 2.5%;
+    border: 2px;
+  }
 }
