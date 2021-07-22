@@ -91,7 +91,7 @@
         "simple-line-icons": "2.4.1",
         "underscore": "1.8.3",
         "validator": "9.4.1",
-        "xlsx": "^0.14.1"
+        "xlsx": "^0.17.0"
     },
     "scripts": {
         "dev": "webpack -d --progress --watch --profile --json > compilation-stats.json --env.dev",
