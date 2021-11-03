@@ -90,7 +90,7 @@
         "request-promise": "4.2.2",
         "simple-line-icons": "2.4.1",
         "underscore": "1.8.3",
-        "validator": "9.4.1",
+        "validator": "13.7.0",
         "xlsx": "^0.14.1"
     },
     "scripts": {
